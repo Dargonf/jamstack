@@ -11,7 +11,7 @@ export default async function HeroCard({ hero }: HeroCardProps) {
         <Link href={"/heroes/" + hero.slug} className="flex flex-col justify-center items-center border-2 border-black rounded-2xl px-4 py-2">
             <span>{hero.name}</span>
             <Image
-                src={"http://localhost:1337" + hero.design.url}
+                src={"https://strapi-jamstack.onrender.com" + hero.design.url}
                 alt={hero.design.name}
                 width={256}
                 height={256}

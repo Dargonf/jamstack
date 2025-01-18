@@ -10,7 +10,7 @@ export default async function Home() {
         <div className="h-full w-full flex flex-col justify-center items-center gap-10 px-10 py-10">
             <span className="text-4xl">Armée de {army.name}</span>
             <Image
-                src={"http://localhost:1337" + army.design.url}
+                src={"https://strapi-jamstack.onrender.com" + army.design.url}
                 alt={army.design.name}
                 width={1024}
                 height={1024}

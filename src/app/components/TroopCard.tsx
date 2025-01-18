@@ -11,7 +11,7 @@ export default async function HeroCard({ troop }: TroopCardProps) {
         <Link href={"/troops/" + troop.slug} className="flex flex-col justify-center items-center border-2 border-black rounded-2xl px-4 py-2">
             <span>{troop.name}</span>
             <Image
-                src={"http://localhost:1337" + troop.design.url}
+                src={"https://strapi-jamstack.onrender.com" + troop.design.url}
                 alt={troop.design.name}
                 width={256}
                 height={256}
