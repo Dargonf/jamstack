@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default async function View({ params, }: { params: Promise<{ slug: string }> }) {
     const slug = (await params).slug
-    const response = await fetch(`http://localhost:1337/api/troops?filters[slug][$eq]=${slug}&populate=*`)
+    const response = await fetch(`https://strapi-jamstack.onrender.com/api/troops?filters[slug][$eq]=${slug}&populate=*`)
     const troop: Troop = (await response.json()).data[0]
     return (
         <div className="h-full w-full flex flex-col justify-center items-center gap-4 px-10 py-10">

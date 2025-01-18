@@ -3,7 +3,7 @@ import { Army } from "./interface/Army";
 import Link from "next/link";
 
 export default async function Home() {
-    const response: Response = await fetch(`http://localhost:1337/api/army?populate=*`)
+    const response: Response = await fetch(`https://strapi-jamstack.onrender.com/api/army?populate=*`)
     const army: Army = (await response.json()).data
     console.log(army)
     return (

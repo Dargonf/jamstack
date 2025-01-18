@@ -3,7 +3,7 @@ import NoDataCard from "../components/NoDataCard";
 import { Hero } from "../interface/Hero";
 
 export default async function Home() {
-    const response: Response = await fetch(`http://localhost:1337/api/heroes?populate=*`)
+    const response: Response = await fetch(`https://strapi-jamstack.onrender.com/api/heroes?populate=*`)
     const heroes: Hero[] = (await response.json()).data
     console.log(heroes)
     return (
