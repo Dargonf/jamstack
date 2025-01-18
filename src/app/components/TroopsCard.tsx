@@ -9,7 +9,7 @@ export default async function HeroesCard({troops}: TroopsCardProps) {
     return (
         <div className="flex flex-row gap-6">
             {troops.map((troop, index) => (
-                <TroopCard troop={troop} />
+                <TroopCard key={index} troop={troop} />
             ))}
         </div>
     )
